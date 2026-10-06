@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: "*.{ts,tsx,mjs}"
+      run: ./node_modules/.bin/eslint --no-warn-ignored {staged_files}
+    no-comments:
+      glob: "*.{ts,tsx,mjs}"
+      run: bash scripts/check-no-comments.sh {staged_files}
+
+commit-msg:
+  commands:
+    commitlint:
+      run: ./node_modules/.bin/commitlint --edit {1}

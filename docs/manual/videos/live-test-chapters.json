@@ -1,0 +1,127 @@
+[
+  {
+    "id": "INTRO",
+    "title": "Fresh stack, seeded catalog",
+    "seconds": 0
+  },
+  {
+    "id": "UC-S1",
+    "title": "Browse the catalog",
+    "seconds": 5
+  },
+  {
+    "id": "UC-S2",
+    "title": "Search in your own words",
+    "seconds": 9
+  },
+  {
+    "id": "UC-S3",
+    "title": "Typo-tolerant and hostile search",
+    "seconds": 15
+  },
+  {
+    "id": "UC-S4",
+    "title": "Command palette",
+    "seconds": 21
+  },
+  {
+    "id": "UC-S5",
+    "title": "Build a cart",
+    "seconds": 25
+  },
+  {
+    "id": "UC-S6",
+    "title": "Checkout with an approved card",
+    "seconds": 31
+  },
+  {
+    "id": "UC-S7",
+    "title": "Declined card",
+    "seconds": 40
+  },
+  {
+    "id": "UC-S8",
+    "title": "Out-of-stock product",
+    "seconds": 49
+  },
+  {
+    "id": "UC-S9",
+    "title": "Free order",
+    "seconds": 53
+  },
+  {
+    "id": "UC-A1",
+    "title": "Studio · products",
+    "seconds": 63
+  },
+  {
+    "id": "UC-A3",
+    "title": "Validation",
+    "seconds": 67
+  },
+  {
+    "id": "UC-A2",
+    "title": "Create a product",
+    "seconds": 70
+  },
+  {
+    "id": "UC-A5",
+    "title": "Concurrent edit is detected",
+    "seconds": 83
+  },
+  {
+    "id": "UC-A6",
+    "title": "Delete a product",
+    "seconds": 89
+  },
+  {
+    "id": "UC-A8",
+    "title": "Import a CSV with problems",
+    "seconds": 93
+  },
+  {
+    "id": "UC-A9",
+    "title": "Reject a CSV with missing columns",
+    "seconds": 99
+  },
+  {
+    "id": "UC-A11",
+    "title": "The challenge CSV, seeded on first start",
+    "seconds": 104
+  },
+  {
+    "id": "UC-A12",
+    "title": "Follow orders in the Studio",
+    "seconds": 108
+  },
+  {
+    "id": "UC-P1a",
+    "title": "Light theme",
+    "seconds": 112
+  },
+  {
+    "id": "UC-P1b",
+    "title": "Mobile layout",
+    "seconds": 118
+  },
+  {
+    "id": "UC-P2",
+    "title": "API documentation",
+    "seconds": 123
+  },
+  {
+    "id": "UC-P3",
+    "title": "One purchase = one distributed trace",
+    "seconds": 127
+  },
+  {
+    "id": "UC-P4",
+    "title": "Idempotent order placement",
+    "seconds": 133
+  },
+  {
+    "id": "END",
+    "title": "All 23 checks passed",
+    "seconds": 137
+  }
+]

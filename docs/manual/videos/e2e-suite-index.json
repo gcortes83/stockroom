@@ -1,0 +1,182 @@
+[
+ {
+  "seconds": 0.0,
+  "title": "has no critical or serious accessibility violations on /shop (dark)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 4.6,
+  "title": "has no critical or serious accessibility violations on /shop/cart (dark)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 8.6,
+  "title": "has no critical or serious accessibility violations on /shop/checkout (dark)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 12.8,
+  "title": "has no critical or serious accessibility violations on /admin/products (dark)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 17.2,
+  "title": "has no critical or serious accessibility violations on /admin/imports (dark)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 21.3,
+  "title": "has no critical or serious accessibility violations on /admin/orders (dark)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 25.4,
+  "title": "has no critical or serious accessibility violations on /admin/products/new (dark)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 29.6,
+  "title": "has no critical or serious accessibility violations on /shop (light)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 34.1,
+  "title": "has no critical or serious accessibility violations on /shop/cart (light)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 38.2,
+  "title": "has no critical or serious accessibility violations on /shop/checkout (light)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 42.2,
+  "title": "has no critical or serious accessibility violations on /admin/products (light)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 46.7,
+  "title": "has no critical or serious accessibility violations on /admin/imports (light)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 50.9,
+  "title": "has no critical or serious accessibility violations on /admin/orders (light)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 55.0,
+  "title": "has no critical or serious accessibility violations on /admin/products/new (light)",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 59.2,
+  "title": "serves interactive API docs through nginx without CSP violations",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 60.4,
+  "title": "Purchase \u203a confirms an order paid with an approved card and decrements stock",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 63.1,
+  "title": "Purchase \u203a cancels an order when the card is declined and releases the stock",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 65.7,
+  "title": "Purchase \u203a marks sold-out products as unavailable",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 66.9,
+  "title": "Purchase \u203a asks the shopper to review when a price changed after adding to cart",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 69.6,
+  "title": "Discover \u203a turns a natural-language query into visible filters @mobile",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 71.7,
+  "title": "Discover \u203a finds products despite typos and keeps state in the URL",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 72.9,
+  "title": "Discover \u203a renders hostile product names as plain text",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 74.1,
+  "title": "Discover \u203a opens the command palette and jumps to a product",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 76.5,
+  "title": "Discover \u203a turns a natural-language query into visible filters @mobile",
+  "project": "mobile",
+  "status": "passed"
+ },
+ {
+  "seconds": 78.7,
+  "title": "CSV import \u203a imports a file and shows the data-quality report",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 79.9,
+  "title": "CSV import \u203a explains a file with a missing header",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 81.1,
+  "title": "CSV import \u203a shows the seeded example import with 5 rejected rows",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 82.4,
+  "title": "Studio products \u203a creates, edits and deletes a product through the UI",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 85.5,
+  "title": "Studio products \u203a shows validation errors next to the fields",
+  "project": "desktop",
+  "status": "passed"
+ },
+ {
+  "seconds": 86.7,
+  "title": "Studio products \u203a detects a concurrent edit and offers to reload while keeping changes",
+  "project": "desktop",
+  "status": "passed"
+ }
+]

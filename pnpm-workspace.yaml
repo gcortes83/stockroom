@@ -1,0 +1,12 @@
+packages:
+  - apps/*
+  - services/*
+  - packages/*
+
+onlyBuiltDependencies:
+  - lefthook
+  - esbuild
+  - "@swc/core"
+  - "@tailwindcss/oxide"
+
+autoInstallPeers: true

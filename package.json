@@ -1,0 +1,46 @@
+{
+  "name": "stockroom",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcortes83/stockroom.git"
+  },
+  "homepage": "https://github.com/gcortes83/stockroom#readme",
+  "bugs": {
+    "url": "https://github.com/gcortes83/stockroom/issues"
+  },
+  "packageManager": "pnpm@10.34.6",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:integration": "turbo run test:integration --concurrency=1",
+    "check:comments": "bash scripts/check-no-comments.sh",
+    "format": "prettier --write \"**/*.{ts,tsx,json,css,md}\"",
+    "infra:up": "docker compose up -d postgres rabbitmq",
+    "smoke": "bash scripts/smoke.sh",
+    "test:e2e": "pnpm --filter @stockroom/web e2e",
+    "bench:search": "node scripts/bench/search-benchmark.mjs",
+    "test:coverage": "turbo run test:coverage --concurrency=1",
+    "prepare": "git rev-parse --git-dir >/dev/null 2>&1 && lefthook install || true"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
+    "@eslint/js": "9.39.5",
+    "autocannon": "8.0.0",
+    "eslint": "9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "17.13.0",
+    "lefthook": "2.1.17",
+    "prettier": "3.9.9",
+    "turbo": "2.11.7",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.1"
+  }
+}

@@ -1,0 +1,58 @@
+schema: spec-driven
+
+context: |
+  Project: Stockroom, an enterprise-grade e-commerce code challenge (see requeriments.txt).
+  Goal: products CRUD, CSV product import, product search, fake-payment purchase flow, with a UI for all three.
+  Must run fully locally with `docker compose up` (no cloud dependencies, no paid services).
+
+  Architecture: microservices in a pnpm + Turborepo monorepo.
+    - apps/web: React 19 + Vite + TypeScript + TanStack Query + React Router + react-hook-form + zod + Tailwind/shadcn-ui
+    - services/gateway: NestJS API gateway / BFF (routing, request-id, rate limit, OpenAPI aggregation)
+    - services/catalog: NestJS, products CRUD, search, CSV import, stock reservation
+    - services/orders: NestJS, checkout, order lifecycle, saga orchestration
+    - services/payments: NestJS, fake payment provider (deterministic success/failure rules)
+    - packages/contracts: shared zod schemas, DTO types, event envelopes
+    - packages/platform: technical cross-cutting code only (config, logging, problem+json, health, outbox, messaging), no domain logic
+  Roadmap: docs/implementation-plan.md; each phase maps to one OpenSpec change.
+  Data: PostgreSQL 17, one database per service (same container locally), node-postgres (pg) with plain SQL migrations run at service start.
+  Messaging: RabbitMQ with transactional outbox + idempotent consumers.
+  Search: PostgreSQL full-text search + pg_trgm (alternatives documented in ADRs).
+  Testing: Vitest (unit), Testcontainers (integration), Supertest (HTTP), Playwright (e2e).
+  Runtime: Node 24 LTS in containers, multi-stage Dockerfiles, healthchecks on every service.
+
+  Conventions:
+    - Code must contain NO comments (challenge rule). Explain decisions in ADRs/README instead.
+    - Money is never a float: integer minor units (cents) in code, NUMERIC(12,2) in DB.
+    - Every architectural decision gets an ADR in docs/adr/ and a summary in README.md.
+    - Conventional Commits.
+  Project skills live in .claude/skills/ (software-architecture, microservices, backend-nestjs,
+  frontend-react, database-postgres, api-design, csv-import, docker-local, testing-strategy, deliverables).
+
+rules:
+  proposal:
+    - Always include "Non-goals" and "Open questions / assumptions" sections
+    - State which services and bounded contexts are affected
+    - Reference the requirement line(s) in requeriments.txt being satisfied
+  specs:
+    - Use SHALL/MUST language and Given/When/Then scenarios for every requirement
+    - Cover failure and edge cases (validation errors, out of stock, duplicate SKU, concurrent purchase, malformed CSV rows)
+    - Specify HTTP status codes and error shape (RFC 9457 problem+json) for API behavior
+  design:
+    - Include a "Alternatives considered" section with the trade-off for each rejected option
+    - Include data model changes, API contracts, and emitted/consumed events
+    - Describe consistency, idempotency and failure handling for any cross-service flow
+    - Note any new ADR to create under docs/adr/
+  tasks:
+    - Group tasks by service/app; each task small enough to finish and test in under 2 hours
+    - Every feature task has a paired test task; end each group with a verification task
+    - Include docker-compose / README updates as explicit tasks when behavior changes how the app runs
+
+operations:
+  apply:
+    guidance:
+      - Load the relevant project skills before coding (backend-nestjs, frontend-react, database-postgres, etc.)
+      - Run lint, typecheck and tests for the touched workspace before marking a task done
+      - Do not write code comments
+  archive:
+    guidance:
+      - Confirm README and ADRs reflect the shipped behavior before archiving

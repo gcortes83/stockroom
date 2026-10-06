@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+.turbo/
+coverage/
+playwright-report/
+test-results/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.claude/settings.local.json
+apps/web/live-results/

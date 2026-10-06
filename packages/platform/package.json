@@ -1,0 +1,71 @@
+{
+  "name": "@stockroom/platform",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./tracing": {
+      "types": "./dist/tracing-register.d.ts",
+      "default": "./dist/tracing-register.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src test",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "1.9.1",
+    "@opentelemetry/exporter-trace-otlp-http": "0.222.0",
+    "@opentelemetry/instrumentation-http": "0.222.0",
+    "@opentelemetry/instrumentation-pg": "0.74.0",
+    "@opentelemetry/instrumentation-undici": "0.32.0",
+    "@opentelemetry/resources": "2.11.0",
+    "@opentelemetry/sdk-node": "0.222.0",
+    "@opentelemetry/semantic-conventions": "1.43.0",
+    "@stockroom/contracts": "workspace:*",
+    "amqp-connection-manager": "4.1.15",
+    "amqplib": "0.10.9",
+    "fastify": "5.11.3",
+    "nestjs-pino": "4.6.1",
+    "pg": "8.23.1",
+    "pino": "9.14.0",
+    "pino-http": "10.5.0",
+    "pino-pretty": "13.2.0",
+    "uuid": "11.1.1",
+    "zod": "4.6.5"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "11.2.7",
+    "@nestjs/core": "11.2.7",
+    "@nestjs/platform-fastify": "11.2.7",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2"
+  },
+  "devDependencies": {
+    "@nestjs/common": "11.2.7",
+    "@nestjs/core": "11.2.7",
+    "@nestjs/platform-fastify": "11.2.7",
+    "@opentelemetry/context-async-hooks": "2.11.0",
+    "@opentelemetry/core": "2.11.0",
+    "@opentelemetry/sdk-trace-base": "2.11.0",
+    "@types/amqplib": "0.10.8",
+    "@types/node": "24.19.1",
+    "@types/pg": "8.23.1",
+    "@vitest/coverage-v8": "3.2.7",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  }
+}

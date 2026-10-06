@@ -1,0 +1,6 @@
+name,sku,description,category,price,stock,weight_kg
+Manual Desk Plant,MAN-001,"Small succulent in a ceramic pot",Home & Office,18.50,40,0.6
+Manual Travel Adapter,MAN-002,"Universal adapter, 4 USB ports",Electronics,24.99,75,0.2
+Manual Yoga Strap,MAN-003,Cotton strap with metal buckle,Sports,9.99,120,0.15
+Manual Tea Sampler,MAN-004,"Six loose-leaf teas, 25g each",Food & Beverage,21.00,60,0.3
+Manual Sketchbook,MAN-005,A4 dotted sketchbook,Stationery,12.75,200,0.5

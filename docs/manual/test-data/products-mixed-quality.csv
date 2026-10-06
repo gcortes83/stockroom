@@ -1,0 +1,12 @@
+name,sku,description,category,price,stock,weight_kg
+Good Lamp,MIX-001,"Warm LED, dimmable",Home & Office,$34.90,15,1.1
+Bulk Rack,MIX-002,Steel shelving unit,Tools,"1,299.00",3,
+Free Sample,MIX-003,Price written as text,Gifts,free,10,0.1
+Ghost Stock,MIX-004,Negative stock,Kitchen,5.00,-3,0.2
+   ,MIX-005,Whitespace-only name,Kitchen,5.00,1,0.2
+No Category,MIX-006,Category left empty,,5.00,1,0.2
+Heavy Typo,MIX-007,Weight is not a number,Outdoors,10.00,5,heavy
+Good Lamp v2,MIX-001,Same SKU again - this row wins,Home & Office,36.00,20,1.1
+,,,,,,
+"Comma, Inc. Mug",MIX-008,"Name contains a comma and ""quotes""",Kitchen,8.00,30,0.4
+<b>Bold</b> Candle,MIX-009,Markup is stored as text,Home & Office,6.50,25,0.3

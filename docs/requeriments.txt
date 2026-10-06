@@ -1,0 +1,26 @@
+Code Challenge e-commerce You're tasked to build an enterprise-grade e-commerce application with the following features:
+ - Must use a local DB (SQL/No SQL)
+ - CRUD for Products.
+ - Products can also be imported from a csv.
+   - Proposed csv structure
+ 	  - name (string)
+ 	  - sku (string)
+ 	  - description (string)
+ 	  - category (string/enum)
+ 	  - price(decimal)
+ 	  - stock (string/int)
+ 	  - weight_kg (decimal)
+    - Please download and use the following CSV file as an example: Please add in your readme file the date you downloaded the example CSV file provided.
+ - Search for Products.
+ - Purchase products (payment provider not necessary, fake the payment).
+ - UI is required for:
+   - CRUD for Products.
+   - Search for Products.
+   - Purchase for Products.
+ - The application must be runnable as a docker container.
+ - On a readme.md document your decisions, approach, alternatives considered.
+ - AI is allowed, if you use it, please remove comments from the code.
+ - Please provide your solution in a Github repository.
+ - Please add instructions on how to run the project locally.
+
+ Note: In the era of AI we know any specific requirement can be achieved easily. This challenge is not focused on just completing it but we want you to ask the right questions and guide AI to make use of your experience and foreseeing skills.

@@ -1,0 +1,12 @@
+**/node_modules
+**/dist
+**/coverage
+**/.turbo
+.git
+.idea
+.claude
+openspec
+docs
+**/playwright-report
+**/test-results
+.env
